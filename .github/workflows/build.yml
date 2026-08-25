@@ -16,7 +16,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -q DaftarFaniGharb_GitHubReady.zip
+          unzip -q DaftarFaniGharb_Android_Project.zip
           PROJECT_DIR=$(find . -name settings.gradle -type f | head -1 | xargs dirname)
           echo "PROJECT_DIR=$PROJECT_DIR" >> $GITHUB_ENV
 
